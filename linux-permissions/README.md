@@ -1,35 +1,47 @@
-Project: Linux File Permissions & Least Privilege
-Project Description
-In this project, I worked as a security analyst to examine and manage file permissions within a research team’s Linux environment. I utilized Linux commands to identify incorrect authorizations and applied the principle of least privilege to secure files and directories. This ensures that only appropriate users have access to sensitive data.
+# **Project: Linux File Permissions & Least Privilege**
 
-Technical Audit
-I began by auditing the directory details to identify security gaps:
+### **Project Description**
+In this project, I performed the role of a **Security Analyst** to examine and manage file permissions within a research team’s Linux environment. I utilized Linux commands to identify incorrect authorizations and applied the **Principle of Least Privilege** to secure sensitive files and directories. This proactive approach ensured that only authorized users had access to critical information.
 
-Command: ls -la /home/researcher2/projects
+---
 
-Finding: project_k.txt had permissions set to -rw-rw-rw-, meaning anyone could modify the file, violating security best practices.
+### **Technical Audit**
+I initiated the process by auditing the directory details to identify existing security gaps:
 
-Remediation Steps
-1. Securing Publicly Writable Files
-Action: Removed write permissions from "others" for project_k.txt.
+* **Command Executed**: 
+    `ls -la /home/researcher2/projects`
+* **Audit Finding**: 
+    The file `project_k.txt` was identified with permissions set to `-rw-rw-rw-`. This configuration allowed everyone on the system to modify the file, which directly violated security best practices and the principle of least privilege.
 
-Command: chmod o-w project_k.txt
+---
 
-Result: Permissions updated to -rw-rw-r--.
+### **Remediation Steps**
 
-2. Hardening Hidden Archive Files
-Action: Secured the hidden file .project_x.txt by making it read-only for both user and group.
+#### **1. Securing Publicly Writable Files**
+To mitigate the risk of unauthorized modifications to `project_k.txt`, I restricted access to only the necessary owners.
+* **Action**: Removed write permissions from “others”.
+* **Command**: 
+    `chmod o-w project_k.txt`
+* **Resulting Permissions**: 
+    `-rw-rw-r--`
 
-Command: chmod u-w,g-w .project_x.txt
+#### **2. Hardening Hidden Archive Files**
+Hidden files often contain sensitive configuration data and must be protected accordingly.
+* **Action**: Secured `.project_x.txt` by converting it to a read-only format for both the user and the group.
+* **Command**: 
+    `chmod u-w,g-w .project_x.txt`
+* **Resulting Permissions**: 
+    `-r--r-----`
 
-Result: Permissions updated to -r--r-----.
+#### **3. Restricting Directory Access**
+Access to project directories should be limited to the specific owner to prevent lateral movement or unauthorized viewing of drafts.
+* **Action**: Restricted the `drafts` directory so that only the owner (`researcher2`) has access.
+* **Command**: 
+    `chmod g-x drafts`
+* **Resulting Permissions**: 
+    `drwx------`
 
-3. Restricting Directory Access
-Action: Restricted the drafts directory so only the owner (researcher2) can access it.
+---
 
-Command: chmod g-x drafts
-
-Result: Permissions updated to drwx------.
-
-Summary
-Through this project, I demonstrated the ability to manage Linux permissions effectively and enforce the principle of least privilege to protect sensitive organizational data.
+### **Summary**
+Through the execution of this project, I demonstrated a high level of proficiency in managing
