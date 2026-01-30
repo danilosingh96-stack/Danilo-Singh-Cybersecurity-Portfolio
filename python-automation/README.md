@@ -16,48 +16,68 @@ import_file = "allow_list.txt"
 with open(import_file, "r") as file:
     ip_addresses = file.read()
 
-2. Converting Strings to Searchable Lists
-Since the file is read as a single string, I used the .split() method to convert the data into a list format. This allows the algorithm to iterate through individual IP addresses for comparison.
+#### **2. Converting Strings to Searchable Lists**
+Since the file is initially read as a single string, it is difficult to isolate and remove individual IP addresses. To make the data searchable and easy to manipulate, I used the `.split()` method to convert the string into a list format. This allows the algorithm to iterate through each IP address as a separate element.
 
-Code Implementation:
-
-Python
+**Code Implementation:**
+```python
+# Use the .split() method to convert the string into a list
 ip_addresses = ip_addresses.split()
 
-3. Iterating and Removing Unauthorized IPs
-I implemented a for loop to iterate through the remove_list. For every IP identified as no longer authorized, the algorithm checks if it exists in the ip_addresses list and utilizes the .remove() method to delete it.
+#### **3. Iterating and Removing Unauthorized IPs**
+To update the list, I implemented a `for` loop that iterates through the `remove_list`. For every IP address identified as no longer authorized, the algorithm performs a membership check to see if that IP exists within the `ip_addresses` list. If a match is found, the `.remove()` method is called to delete the unauthorized IP from the list.
 
-Logic:
 
-Python
+
+**Code Implementation:**
+```python
+# Iterate through the IPs that should be removed
 for element in remove_list:
+    # Check if the IP is in the allow list
     if element in ip_addresses:
+        # Remove the unauthorized IP
         ip_addresses.remove(element)
 
-4. Finalizing and Writing to the File
-To save the changes, I converted the list back into a newline-separated string using the .join() method. I then opened the file in write mode ("w") to overwrite the old data with the secured, updated list.
+#### **4. Finalizing and Writing to the File**
+In the final step of the algorithm, the updated list of IP addresses must be written back to the original file. Since the `.write()` function requires a string argument, I used the `.join()` method to convert the list back into a single string. To maintain the original file format, I used `"\n"` as a separator so that each IP address appears on a new line. I then opened the file in write mode (`"w"`) to overwrite the old contents with the corrected allow list.
 
-Code Implementation:
 
-Python
+
+**Code Implementation:**
+```python
+# Convert the list back into a string with newlines
 ip_addresses = "\n".join(ip_addresses)
+
+# Open the file in write mode and update its contents
 with open(import_file, "w") as file:
     file.write(ip_addresses)
-Summary of Python Competencies
-Beyond this specific algorithm, I have developed several automated scripts to handle various security tasks. My proficiency includes:
 
-Regular Expressions (Regex): I have used the re module to extract device IDs and flag suspicious IP patterns from dense log files.
+---
 
-Functional Programming: I define reusable functions with parameters and return values to calculate login ratios and automate alert triggers.
+### **Summary of Python Competencies**
+Beyond the file update algorithm, I have completed a series of automated scripts that apply Python to common security tasks. These activities demonstrate proficiency in the following areas:
 
-String Manipulation: I utilize indexing, slicing, and methods like .strip() and .lower() to standardize employee IDs and parse URLs for malicious indicators.
+#### **Regular Expressions (Regex)**
+I utilized the `re` module to identify specific patterns within log files. This included developing expressions to extract device IDs and flag IP addresses that matched known malicious patterns.
 
-Conditional Logic: I develop multi-layered algorithms that verify both user approval and assigned device IDs through nested if statements.
+#### **Functional Programming**
+I developed reusable, user-defined functions to streamline security audits. One script involved creating a function that calculates the ratio of failed login attempts to successful ones, allowing for automated threshold alerts.
 
-Key Takeaways
-Automation Efficiency: Reduced manual error by programmatically updating security records.
+#### **String Manipulation**
+I processed string-based security data by using indexing and slicing to standardize employee IDs. I also utilized string methods such as `.strip()` and `.lower()` to ensure data consistency when parsing URLs and system logs.
 
-Resource Management: Used Python context managers (with) to handle file I/O operations safely and prevent memory leaks.
+#### **Conditional Logic**
+I implemented multi-layered algorithms using `if`, `elif`, and `else` statements. These scripts automate the verification process by checking multiple security criteria, such as confirming if a user is approved before validating their assigned device ID.
 
-Principle of Least Privilege: Enforced access control by ensuring "allow lists" are strictly maintained through automated removal of revoked credentials.
+---
 
+### **Key Takeaways**
+
+#### **Reduced Manual Error**
+By using Python to handle file updates and data parsing, the risk of human error associated with manual entry is minimized. The algorithm ensures that the allow list is modified precisely according to the removal criteria.
+
+#### **Efficient Resource Management**
+The use of the `with` statement for file operations ensures that system resources are handled correctly. This practice prevents files from remaining open unnecessarily, which is essential for maintaining system stability during automated tasks.
+
+#### **Enforcement of Least Privilege**
+These automation tools support the **Principle of Least Privilege** by providing a reliable method to revoke access. Automating the removal of unauthorized IP addresses ensures that access permissions remain accurate and current.
