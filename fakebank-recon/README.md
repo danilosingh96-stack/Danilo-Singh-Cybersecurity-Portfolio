@@ -14,19 +14,19 @@ I followed a standard penetration testing workflow:
 ### **1. Automated Directory Brute-Forcing**
 I utilized **Dirb**, a command-line web content scanner, to identify hidden paths by testing a wordlist against the target server.
 
-![Reconnaissance Terminal Output](./image_a21e06.png)
+![Reconnaissance Terminal Output](./fb%201.png)
 
 * **Command**: `dirb http://fakebank.thm`
 * **Finding**: The scan successfully identified a hidden directory: `http://fakebank.thm/bank-transfer` with an **HTTP 200 OK** response code.
 
-![Dirb Scan Results](./image_a1c376.png)
+![Dirb Scan Results](./fb%202.png)
 
 * **Analysis**: An HTTP 200 code on a "transfer" page suggests the directory is live and potentially accessible without an active session.
 
 ### **2. Bypassing Authentication**
 I manually navigated to the discovered endpoint in a web browser to check for permission requirements.
 
-![Bypassing the Login UI](./image_a1c2d2.png)
+![Bypassing the Login UI](./fb3.png)
 
 * **Action**: Navigated to `http://fakebank.thm/bank-transfer`.
 * **Finding**: I gained full, unauthenticated access to a hidden **Admin Portal**. No login prompt or session token was required.
@@ -34,7 +34,7 @@ I manually navigated to the discovered endpoint in a web browser to check for pe
 ### **3. Exploiting Business Logic**
 To demonstrate the severity of this vulnerability, I interacted with the portal’s transfer functionality.
 
-![Unauthorized Financial Transaction](./image_a1bf96.png)
+![Unauthorized Financial Transaction](./fb4.png)
 
 * **Action**: Executed a deposit of **$2,000** into account **8881**.
 * **Result**: The transaction was processed successfully without any authorization checks. This confirmed a critical **Broken Access Control** (OWASP A01:2021) vulnerability.
