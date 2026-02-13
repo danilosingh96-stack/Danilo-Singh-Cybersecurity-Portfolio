@@ -1,5 +1,5 @@
 # Hello, I'm Danilo Singh
-<a href="https://linkedin.com/in/danilo-singh-56067a129//"><img src="https://img.shields.io/badge/-LinkedIn-0072b1?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+<a href="https://linkedin.com/in/danilo-singh//"><img src="https://img.shields.io/badge/-LinkedIn-0072b1?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 
 👋 Hi, I'm Danilo | Cybersecurity Analyst & Automation Enthusiast
 I am an aspiring Security Operations Center Analyst with a background in computer science and a focus on defensive automation. I specialize in developing Python-based scripts that streamline access control workflows and manage dynamic allow lists to reduce administrative overhead. By prioritizing secure coding principles, such as utilizing context managers, I ensure data integrity and system stability across all automated operations. My work is backed by structured technical documentation designed to make complex security procedures repeatable, auditable, and accessible to team members. I am committed to leveraging these analytical skills to protect organizational infrastructure while working toward a career in professional penetration testing.
