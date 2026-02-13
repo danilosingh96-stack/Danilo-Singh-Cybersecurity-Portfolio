@@ -56,38 +56,34 @@ The Will of the King of the Pirates: Much like Luffy from One Piece, I am driven
 
 | Skill Category | Technical Competency | Associated Project |
 | :--- | :--- | :--- |
-| Defensive Engineering | SIEM Implementation and Log Analysis | [Detection Lab](https://github.com/DaniloSingh/Detection-Lab) |
-| Network Security | Traffic Monitoring and Attack Detection | [Detection Lab](https://github.com/DaniloSingh/Detection-Lab) |
-| SOAR & Automation | Security Orchestration with `Shuffle SOAR` | [SOC Automation Lab](https://github.com/DaniloSingh/SOC-Automation-Lab) |
-| Incident Response | Case Management and Response Execution | [SOC Automation Lab](https://github.com/DaniloSingh/SOC-Automation-Lab) |
-| Threat Mitigation | Scripting for Automated Threat Containment | [Python Algorithm](https://github.com/DaniloSingh/Python-Security-Project) |
-| Access Control | Automated `Allow List` Management | [Python Algorithm](https://github.com/DaniloSingh/Python-Security-Project) |
-| Technical Writing | Professional Write-ups and Documentation | [Portfolio Docs](https://github.com/DaniloSingh/Cybersecurity-Portfolio-Docs) |
+| **Defensive Engineering** | SIEM Implementation and Log Analysis | [Detection Lab](./Detection-Lab) |
+| **Network Security** | Traffic Monitoring and Attack Detection | [Detection Lab](./Detection-Lab) |
+| **SOAR & Automation** | Security Orchestration with `Shuffle SOAR` | [SOC-Automation-Lab](./SOC-Automation-Lab) |
+| **Incident Response** | Applying NIST Framework (ICMP Flood Analysis) | [Incident-Report-Analysis](./Incident-report-analysis) |
+| **Database Security** | Investigating Incidents with `SQL` (AND, OR, NOT) | [SQL-Filtering-Project](./Apply-filters-to-SQL-queries) |
+| **Vulnerability Analysis** | Analyzing SYN Flood & TCP Three-Way Handshakes | [Network-Attack-Report](./Cybersecurity-incident-report-network-attack) |
+| **Threat Mitigation** | Scripting for Automated Threat Containment | [Python-Security-Project](./Python-Security-Project) |
+| **Technical Writing** | Professional Incident Reporting & Documentation | [Cybersecurity-Portfolio-Docs](./Cybersecurity-Portfolio-Docs) |
 
 ---
 
+## 🔧 Tools (Official Documentation)
 
-## 🔧 Tools
+### Network & Analysis
+[![Wireshark](https://img.shields.io/badge/-Wireshark-1679A7?style=for-the-badge&logo=Wireshark&logoColor=white)](https://www.wireshark.org/)
+[![Suricata](https://img.shields.io/badge/-Suricata-EF3B2D?style=for-the-badge&logo=Suricata&logoColor=white)](https://suricata.io/)
+[![Zeek](https://img.shields.io/badge/-Zeek-777BB4?style=for-the-badge&logo=Zeek&logoColor=white)](https://zeek.org/)
+[![TCP/IP](https://img.shields.io/badge/-TCP%2FIP-4D4D4D?style=for-the-badge&logoColor=white)](https://en.wikipedia.org/wiki/Internet_protocol_suite)
 
-### Network
-<div>
-    <img src="https://img.shields.io/badge/-Wireshark-1679A7?&style=for-the-badge&logo=Wireshark&logoColor=white" />
-    <img src="https://img.shields.io/badge/-Suricata-EF3B2D?&style=for-the-badge&logo=Suricata&logoColor=white" />
-    <img src="https://img.shields.io/badge/-Zeek-777BB4?&style=for-the-badge&logo=Zeek&logoColor=white" />
-</div>
+### Endpoint & Database
+[![Microsoft Defender](https://img.shields.io/badge/-Microsoft_Defender-00A4EF?style=for-the-badge&logo=Microsoft&logoColor=white)](https://www.microsoft.com/en-us/security/business/endpoint-security/microsoft-defender-for-endpoint)
+[![Velociraptor](https://img.shields.io/badge/-Velociraptor-4B275F?style=for-the-badge&logo=Velociraptor&logoColor=white)](https://docs.velociraptor.app/)
+[![SQL](https://img.shields.io/badge/-SQL-CC2927?style=for-the-badge&logo=sqlite&logoColor=white)](https://www.sqlite.org/index.html)
 
-### Endpoint
-<div>
-    <img src="https://img.shields.io/badge/-Microsoft_Defender_for_Endpoint-00A4EF?&style=for-the-badge&logo=Microsoft&logoColor=white" />
-    <img src="https://img.shields.io/badge/-Velociraptor-4B275F?&style=for-the-badge&logo=Velociraptor&logoColor=white" />
-</div>
-
-### SIEM
-<div>
-    <img src="https://img.shields.io/badge/-Microsoft_Sentinel-0078D4?&style=for-the-badge&logo=Microsoft&logoColor=white" />
-    <img src="https://img.shields.io/badge/-Splunk-000000?&style=for-the-badge&logo=Splunk&logoColor=white" />
-    <img src="https://img.shields.io/badge/-Elastic-005571?&style=for-the-badge&logo=Elastic&logoColor=white" />
-</div>
+### SIEM & Frameworks
+[![Microsoft Sentinel](https://img.shields.io/badge/-Microsoft_Sentinel-0078D4?style=for-the-badge&logo=Microsoft&logoColor=white)](https://azure.microsoft.com/en-us/products/microsoft-sentinel)
+[![Splunk](https://img.shields.io/badge/-Splunk-000000?style=for-the-badge&logo=Splunk&logoColor=white)](https://www.splunk.com/)
+[![NIST CSF](https://img.shields.io/badge/-NIST_CSF-FF6600?style=for-the-badge&logoColor=white)](https://www.nist.gov/cyberframework)
 
 ---
 
