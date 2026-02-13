@@ -4,7 +4,7 @@
 👋 Hi, I'm Danilo | Cybersecurity Analyst & Automation Enthusiast
 I am an aspiring Security Operations Center Analyst with a background in computer science and a focus on defensive automation. I specialize in developing Python-based scripts that streamline access control workflows and manage dynamic allow lists to reduce administrative overhead. By prioritizing secure coding principles, such as utilizing context managers, I ensure data integrity and system stability across all automated operations. My work is backed by structured technical documentation designed to make complex security procedures repeatable, auditable, and accessible to team members. I am committed to leveraging these analytical skills to protect organizational infrastructure while working toward a career in professional penetration testing.
 
-🛠️ Core Competencies
+🛠️ **Core Competencies**
 Security Automation
 I develop Python-based scripts to streamline access control workflows and manage dynamic allow lists.
 My focus is on reducing administrative overhead while maintaining a consistent security posture.
@@ -17,7 +17,7 @@ Technical Documentation
 I produce structured technical write-ups that translate complex security logic into actionable documentation.
 My goal is to ensure that security procedures are repeatable, auditable, and accessible to team members.
 
-🚀 Featured Project: Python Algorithm for File Updates
+🚀 **Featured Project: Python Algorithm for File Updates**
 Project Overview
 This project involved the development of a Python algorithm designed to maintain the integrity of an authorized IP address database. The script automates the synchronization process by cross-referencing live access logs against a list of revoked identifiers.
 Technical Achievements
@@ -52,95 +52,49 @@ My ultimate career roadmap leads toward professional penetration testing. To be 
 The World's Greatest Detective Strategy: Like Batman, I plan to spend my early career in the SOC mastering the blueprints of every fortification from the inside.
 The Will of the King of the Pirates: Much like Luffy from One Piece, I am driven by a relentless persistence to navigate the Grand Line of cybersecurity certifications, building the technical grit required to eventually lead offensive red team operations.
 
-## Skills
+## 📊 Skills
 
-[Provide skills and associated project. Make sure to hyperlink the project - Remove this afterwards]]
+| Skill Category | Technical Competency | Associated Project |
+| :--- | :--- | :--- |
+| Defensive Engineering | SIEM Implementation and Log Analysis | [Detection Lab](https://github.com/DaniloSingh/Detection-Lab) |
+| Network Security | Traffic Monitoring and Attack Detection | [Detection Lab](https://github.com/DaniloSingh/Detection-Lab) |
+| SOAR & Automation | Security Orchestration with `Shuffle SOAR` | [SOC Automation Lab](https://github.com/DaniloSingh/SOC-Automation-Lab) |
+| Incident Response | Case Management and Response Execution | [SOC Automation Lab](https://github.com/DaniloSingh/SOC-Automation-Lab) |
+| Threat Mitigation | Scripting for Automated Threat Containment | [Python Algorithm](https://github.com/DaniloSingh/Python-Security-Project) |
+| Access Control | Automated `Allow List` Management | [Python Algorithm](https://github.com/DaniloSingh/Python-Security-Project) |
+| Technical Writing | Professional Write-ups and Documentation | [Portfolio Docs](https://github.com/DaniloSingh/Cybersecurity-Portfolio-Docs) |
 
-
-
-| Skill                                         | Associated Project         |
-
-|-----------------------------------------------|----------------------------|
-
-| SIEM Implementation and Log Analysis          | <a href="https://google.com">Detection Lab</a>|
-
-| Network Traffic Monitoring and Attack Detection | <a href="https://google.com">Detection Lab</a>|
-
-| Security Automation with Shuffle SOAR         | SOC Automation Lab|
-
-| Incident Response Planning and Execution      | SOC Automation Lab|
-
-| Case Management with TheHive                  | SOC Automation Lab|
-
-| Scripting and Automation for Threat Mitigation | SOC Automation Lab|
+---
 
 
-
-## Tools
-
-[Provide tools and break them down into categories. Use ChatGPT to help create the link - Remove this afterwards]]
-
-
+## 🔧 Tools
 
 ### Network
-
 <div>
-
     <img src="https://img.shields.io/badge/-Wireshark-1679A7?&style=for-the-badge&logo=Wireshark&logoColor=white" />
-
     <img src="https://img.shields.io/badge/-Suricata-EF3B2D?&style=for-the-badge&logo=Suricata&logoColor=white" />
-
     <img src="https://img.shields.io/badge/-Zeek-777BB4?&style=for-the-badge&logo=Zeek&logoColor=white" />
-
 </div>
-
-
 
 ### Endpoint
-
 <div>
-
     <img src="https://img.shields.io/badge/-Microsoft_Defender_for_Endpoint-00A4EF?&style=for-the-badge&logo=Microsoft&logoColor=white" />
-
     <img src="https://img.shields.io/badge/-Velociraptor-4B275F?&style=for-the-badge&logo=Velociraptor&logoColor=white" />
-
 </div>
-
-
 
 ### SIEM
-
 <div>
-
     <img src="https://img.shields.io/badge/-Microsoft_Sentinel-0078D4?&style=for-the-badge&logo=Microsoft&logoColor=white" />
-
     <img src="https://img.shields.io/badge/-Splunk-000000?&style=for-the-badge&logo=Splunk&logoColor=white" />
-
     <img src="https://img.shields.io/badge/-Elastic-005571?&style=for-the-badge&logo=Elastic&logoColor=white" />
-
 </div>
 
+---
 
-
-## Certifications
-
-[Provide certifications that you have obtained. Use ChatGPT to help create the link - Remove this afterwards]]
-
+## 📜 Certifications
 <div>
-
-<img src="https://img.shields.io/badge/-Security%2B-FF0000?&style=for-the-badge&logo=CompTIA&logoColor=white" />
-
-<img src="https://img.shields.io/badge/-Network%2B-007ACC?&style=for-the-badge&logo=CompTIA&logoColor=white" />
-
-<img src="https://img.shields.io/badge/-A%2B-4D4D4D?&style=for-the-badge&logo=CompTIA&logoColor=white" />
-
-<img src="https://img.shields.io/badge/-CDSA-006400?&style=for-the-badge&logoColor=white" />
-
-<img src="https://img.shields.io/badge/-CCD-000080?&style=for-the-badge&logoColor=white" />
-
+<a href="https://coursera.org/verify/professional-cert/OSADQU3ODRNT"><img src="https://img.shields.io/badge/-Google%20Cybersecurity%20Professional-blue?&style=for-the-badge&logo=coursera&logoColor=white" /></a>
 </div>
-
-
 
 ## Projects
 
