@@ -121,5 +121,4 @@ My ultimate career roadmap leads toward professional penetration testing. To be 
 ## Projects
 
 - Detection Lab
-
 - SOC Automation Project
